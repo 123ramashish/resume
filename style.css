@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+}
+
+/* header */
+
+
+/* header section style */
+
+#body-header{
+    background-image: url(apple-macbook.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-top: -7px;
+    height: 60vh;
+    position: relative;
+   
+}
+
+
+
+
+
+/* navbar */
+/* Navbar styles */
+
+.navnew {
+    position: absolute; /* Change from absolute to fixed */
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000; /* Ensure the navbar stays on top of other content */
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #4ff396;
+}
+
+
+/* name container*/
+.name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: ui-sans-serif;
+}
+
+#name-header{
+    padding-top: 3em;
+   
+}
+
+/* background image container (macbook image */
+
+.image-container{
+    width: 12vw;
+    height: auto;
+    margin: auto;
+    margin-top: -80px;
+    
+}
+.image-container img{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    filter: drop-shadow(3px 3px 2px  rgb(198, 197, 197));
+}
+
+/* main section sytle*/
+/* Style for the main element */
+main {
+    position: relative;
+    margin-top: 0; /* Removed the negative margin */
+}
+
+/* Style for all sections within main */
+section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Alternate background colors for sections */
+section:nth-child(odd) {
+    background-color: white;
+}
+
+section:nth-child(even) {
+    background-color: rgb(211, 211, 211);
+}
+
+/* about section start*/
+
+#about{
+    margin-top: -5em;
+}
+#about p{
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    margin: 6em 15%;
+    color: #525151;
+
+}
+ 
+/* about section end */
+
+
+/* skills and language section start*/
+#skill {
+    height: auto;
+}
+
+/* skill icon and heading container */
+#skill-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    height: 10vh;
+    margin-top: 15px;
+}
+
+/* skill icon */
+.fa-chalkboard-user, .fa-people-arrows {
+    font-size: 2.7em;
+    color: rgba(53, 53, 236, 0.858);
+    padding-right: 10px; /* Adjusted padding for better spacing */
+}
+
+/* skill heading */
+#skill-icon-container h2 {
+    font-size: 38px;
+    color: rgba(53, 53, 236, 0.858);
+    margin: 0; /* Removed margin-top and set general margin for consistency */
+}
+
+/* skill- box */
+.language{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+
+}
+/* box inside language box */
+.html-container{
+
+   width: 150px;
+    height: 30px;
+    background-color: #7b767669;
+    border-radius: 15px ;
+    margin: 41px ;
+   
+    position: relative;
+}
+/* skill language text  */
+#html , #CSS , #Mongoose , #MongoDB , #Tailwind , #Bootstraps ,#JavaScript , #Java ,#React , #Express , #Node{
+    height: 30px;
+    border-radius: 15px ;
+    position: absolute;
+    font-size: 20px;
+    padding-left: 6px;
+}
+
+#html {
+width:90% ;
+ background-color: #36c2b2;
+}
+#CSS{
+width:87% ;
+ background-color: #e0d143;
+} 
+#Mongoose {
+width:50% ;
+ background-color: #98ea34;
+} 
+#MongoDB {
+ width:60% ; 
+  background-color: #44caec;  
+}
+#Tailwind{
+width:60% ;
+ background-color: #4185f1;
+} 
+#Bootstraps{
+width:75% ;
+ background-color: #b74bf1;
+} 
+#JavaScript{
+width:80% ;
+ background-color: #f53384;
+} 
+ #Java {
+    width:80% ;
+     background-color: #ecdc51;
+ }
+ #React {
+width:80% ;
+ background-color: #b6f552;
+ } 
+ #Express {
+width:60% ;
+ background-color: #4ff396;
+ } 
+ #Node{
+width:56% ;
+ background-color: #8252ea;
+ }
+
+/* skill section end */
+
+/* experience section start*/
+
+/* experience-div-container */
+.experience-icon{
+   height: auto;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: inline-flex;
+    align-items: center;
+}
+/* experience icon */
+.experience-icon i{
+   font-size: 2em;
+    color: rgba(53, 53, 236, 0.858);
+    padding-right: 32px 
+}
+/* experience heading */
+.experience-icon h2{
+    font-size: 33px;
+    color: rgba(53, 53, 236, 0.858);
+}
+/* experience text container */
+.experience-div-container{
+  width: 95%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+/* experience dot box on the divider style for even box*/
+.experience-div-container div:nth-child(2n+1)::before{
+   content: " ";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(53, 53, 236, 0.858);
+    position: absolute;
+    margin: 3% 0 0 46.7%;
+}
+/* experience dot box on the divider style for odd box*/
+
+.experience-div-container div:nth-child(2n)::before{
+   content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(53, 53, 236, 0.858);
+    position: absolute;
+    margin-top: 2.8%;
+    transform: translateX(-2.8em);
+}
+/* style box inside experience box */
+.experience-div-container div{
+   width: 46%;
+    margin: 3px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: serif;
+}
+.experience-div-container div:nth-child(2n){
+    margin-left: 54%;
+}
+
+#timeline-divider{
+    width: 0;
+    height: 47em;
+    /* border-bottom:  solid rgb(193, 57, 57); */
+    border-style: dashed;
+    margin-top: 12% ;
+     margin-left: 50%;
+    position: absolute;
+}
+#timeline{
+    font-size: 30px;
+    color: rgba(53, 53, 236, 0.858);
+    rotate: 90deg;
+    position:sticky;
+    top: 90px;
+}
+
+/* experience section end */
+
+
+
+/* project section start */
+
+#project {
+    margin: 2em 0;
+}
+
+.project-icon {
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.project-icon i {
+    font-size: 2em;
+    color: rgba(53, 53, 236, 0.858);
+    padding-right: 10px;
+}
+
+.project-icon h2 {
+    font-size: 33px;
+    color: rgba(53, 53, 236, 0.858);
+}
+
+.project-box-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.project-box-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    margin: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: serif;
+}
+
+#project-span {
+    color: #4ff396;
+}
+
+#project-image {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+/* project section end */
+
+/* hobbies section start */
+
+#hobbie{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* hobbie icon and heading container */
+.hobbie-icon-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 20px;
+
+}
+/* hobbie icon */
+.hobbie-icon-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+/* hobbie heading */
+.hobbie-icon-container h2{
+   font-size: 38px;
+    color: rgba(53, 53, 236, 0.858);
+    margin-top: 0;
+}
+
+.hobbies-container{
+    margin: auto;
+    width: 90%;
+    margin: 2em ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* align-items: ; */
+}
+.hobbies-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#hobbies-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+/* hobbies section end */
+
+/* education */
+#education-timeline-divider{
+    width: 0;
+    height: 18em;
+    /* border-bottom:  solid rgb(193, 57, 57); */
+    border-style: dashed;
+    margin-top: 12% ;
+     margin-left: 50%;
+    position: absolute;
+}
+#education-timeline{
+    font-size: 30px;
+    color: rgba(53, 53, 236, 0.858);
+    rotate: 90deg;
+    position:sticky;
+    top: 90px;
+    
+}
+
+
+/* language section start */
+
+#english , #hindi , #maithili ,#bhojpuri{
+    height: 30px;
+    border-radius: 15px ;
+    /* position: absolute; */
+    font-size: 20px;
+    padding-left: 6px;
+    
+}
+#english{
+    width: 90%;
+    background-color: #4ff396;
+}
+#hindi{
+    width: 95%;
+    background-color:#44caec;
+}
+#maithili{
+    width: 95%;
+    background-color: #98ea34;
+}
+#bhojpuri{
+    width: 95%;
+    background-color: #e0d143;
+}
+
+/* language section end */
+
+/* footer start */
+ /* contact */
+#contact{
+    background-image: linear-gradient(to right, #2857a4 50%, #403066);
+    height: auto;
+}
+ .contact-icon-container{
+    display: inline-flex;
+     margin: auto;
+     margin-top: 2em;
+     /* height: auto;  */
+    /* width: 10%; */
+    /* padding-top: 40px;  */
+ }
+ .fa-address-card{
+   font-size: 2.7em;
+    padding-right:  2em;
+    color: white;
+    /* padding-top: 36px; */
+ }
+ .contact-icon-container h2{
+    font-size: 38px;
+    color: white;
+    /* padding-bottom: 20px; */
+
+ }
+
+ /* customer information */
+
+.contact-container{
+    /* display: inline-flexbox; */
+    display: flex;
+    flex-direction: row;
+}
+
+ .customer-details{
+   display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+    margin: 25px;
+    margin-left: 44px;
+    padding: 3px;
+
+ }
+
+ 
+ .customer-details input{
+   width: 100%;
+    height: 43px;
+    border: none;
+    border-style: none;
+    border-bottom: 3px solid white;
+    margin-bottom: 17px;
+    font-size: 22px;
+    /* background-:linear-gradient(to right,  40%,#1a4a97cf 60%) ; */
+    background-color: #2857a4;
+    color: #797352;
+    font-family: math;
+ }
+ .customer-details textarea{
+    width: 100%;
+    height: 43px;
+    border: none;
+     border-bottom: 3px solid white;
+    font-size: 22px;
+    background-color: #2857a4;
+    margin-bottom: 17px;
+
+ }
+  .customer-details button{
+   width: 8em;
+    padding: 4px;
+    font-size: 17px;
+    border: 3px solid white;
+    border-radius: 13px;
+    background-color: #2857a4;
+    color: white;
+    margin: auto;
+    margin-top: 2em;
+  }
+
+  .my-details{
+   float: right;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 6em;
+    color: white;
+  }
+  .my-details h2{
+font-size: 30px;
+margin: auto;
+padding: auto;
+margin-bottom: 20px;
+  }
+   .my-details p{
+    font-size: 18px;
+    font-family: math;
+    
+   }
+    .my-details i{
+        padding-right:20px ;
+    }
+.contact-icon{
+   margin: auto;
+}
+.contact-icon ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+.contact-icon li{
+    font-size: 30px;
+ 
+}
+#copywrite{
+    margin: auto;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    color: white;
+}
+#copywrite span{
+    color: #f13f68de;
+}
+
+/* footer end */
+
+
+/* Add a media query for screens smaller than 768px (standard size for tablets and small desktops) */
+@media(max-width: 768px) {
+    body{
+        width: 100%;
+    }
+    section{
+        width: 100%;
+    }
+    /* Adjustments for the header */
+    .name-container {
+        padding-top: 1em;
+    }
+
+    .image-container img {
+        width: 8em;
+        height: 8em;
+    }
+
+    /* Adjustments for the skill section */
+    .language {
+        width: 100%; /* Make the language boxes full width */
+    }
+
+    .html-container {
+        width: 100%; /* Make the language boxes full width */
+        margin: 10px; /* Adjust margin for smaller screens */
+    }
+
+    /* Adjustments for the experience section */
+    #experiance{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+       
+    }
+    .experience-div-container div:nth-child(2n){
+    margin-left: 0;
+}
+.experience-div-container{
+   
+    gap: 30px;
+}
+    .experience-icon i {
+        font-size: 1.5em;
+        padding-right: 20px;
+    }
+
+    .experience-icon h2 {
+        font-size: 24px;
+    }
+
+    .experience-div-container div {
+        width: 100%; /* Make the experience boxes full width */
+        
+    }
+.experience-div-container div:nth-child(2n+1)::before{
+   display: none;
+}
+/* experience dot box on the divider style for odd box*/
+
+.experience-div-container div:nth-child(2n)::before{
+   display: none;
+}
+    #timeline-divider {
+        display: none;
+    }
+
+    #timeline {
+        display: none;
+    }
+
+    /* Adjustments for the project section */
+    .project-box-container div {
+        width: 100%; /* Make the project boxes slightly narrower */
+    }
+
+    #project-image {
+        width: 10em;
+        height: 10em;
+    }
+
+    /* Adjustments for the hobbies section */
+    .hobbies-container{
+        display: block;
+    }
+    .hobbie-icon-container img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .hobbie-icon-container h2 {
+        font-size: 24px;
+    }
+
+    #hobbies-image {
+        width: 80px;
+        height: 80px;
+    }
+#education{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    #education-timeline-divider{
+   display: none;
+}
+/* experience dot box on the divider style for odd box*/
+
+#education-timeline{
+   display: none;
+}
+.language{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+    /* Adjustments for the contact section */
+    
+    .contact-container{
+         display: block;
+    }
+    .contact-icon-container {
+        flex-direction: column; /* Align icons and text vertically */
+    }
+
+    .contact-icon-container h2 {
+        font-size: 24px;
+    }
+
+    .customer-details {
+        width: 90%; /* Make the input fields slightly narrower */
+        margin-left: 0; /* Remove margin-left */
+    }
+
+    .my-details {
+        width: 90%; /* Make the my details section slightly narrower */
+        margin-left: 0; /* Remove margin-left */
+    }
+
+    .contact-icon ul {
+        justify-content: center; /* Center the icons */
+    }
+
+    #copywrite {
+        text-align: center; /* Center the copyright text */
+    }
+}
